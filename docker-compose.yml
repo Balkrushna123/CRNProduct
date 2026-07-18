@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  crnproductapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: crnproductapi
+    ports:
+      - "5000:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080

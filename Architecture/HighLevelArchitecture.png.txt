@@ -1,0 +1,24 @@
+                 Client
+                    │
+                    ▼
+          ASP.NET Core Web API
+                    │
+      ┌─────────────┴─────────────┐
+      │                           │
+ Controllers               Middleware
+      │                           │
+      └─────────────┬─────────────┘
+                    ▼
+          Application Layer
+ (Services, DTOs, Validators, Mapping)
+                    │
+                    ▼
+              Domain Layer
+      (Entities, Interfaces)
+                    │
+                    ▼
+         Infrastructure Layer
+ (Repository, UnitOfWork, EF Core)
+                    │
+                    ▼
+              SQL Server
